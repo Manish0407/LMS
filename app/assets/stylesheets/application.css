@@ -13,3 +13,143 @@
  *= require_tree .
  *= require_self
  */
+.bg{
+      background: url(library.jpg) no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+  background-size: cover;
+    }
+    #form{
+      height: 350px;
+      width: 350px;
+      background-color: whitesmoke;
+      background-image: url(./images/001.webp);
+      box-shadow: 5px 5px gray;
+    }
+    #form1{
+      height: 260px;
+      width: 350px;
+      background-color: whitesmoke;
+      background-image: url(./images/001.webp);
+    }
+    form label {
+      font-size: 13px;
+      float: left;
+      margin: 0px 0px 0px 18px;
+      color: black;
+    }
+     .class_1 label {
+      font-size: 13px;
+      float: left;
+      margin: 0px 0px 0px 18px;
+      color: black;
+    }
+   b{
+    color: black;
+   }
+   #anker{
+    color: black;
+   }
+   /* background image for home,about,service,contact and employee page */
+   .background{
+      background: url(<img id="drag1" src="<%= asset_path('books.jpg') %>" draggable="true" ondragstart="drag(event)" ) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      color: black;
+    }
+table{
+  border-width: 2px;
+  cellspacing:5px;
+  cellpadding: 5px;
+  border-color: black;
+}
+#book tr:hover{
+  background-color: wheat;
+}
+#container{
+  height: 50vh;
+  width: 50vh;
+  background-color: white;
+}
+#trhead{
+    background-color: gray;
+
+}
+/*.bgimage{
+  background-image: url('./images/image4.jpeg');
+  height: 630px;
+  width: 1300px;
+}*/
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 5px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+input[type=email], select, textarea {
+  width: 100%; /* Full width */
+  padding: 5px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 5px;
+}
+.cl_1{
+  font-family: monospace;
+}
+img.cl_2{
+      border-radius: 50%;
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      width: 40%;
+      opacity: 0.85;
+      }
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}

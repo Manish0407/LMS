@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   get 'books', to: 'books#books'
   get 'sign_in', to: 'user#signin'
   get 'sign_up', to: 'user#signup'
+  get 'contact', to: 'home#contact'
+  get 'about', to: 'home#about'
 end
