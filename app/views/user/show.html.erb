@@ -1,7 +1,7 @@
 <!Doctype html>
 <html>
  <head>
-  <title>Books Page</title>
+  <title>User Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="application.css">
@@ -22,7 +22,7 @@
           <a class="nav-link" href="contact">ContactUs</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="books">Books</a>
+          <a class="nav-link" href="users">users</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="sign_in">SignIn</a>
@@ -40,31 +40,29 @@
   <img src="./images/002.webp" class="cl_2" alt="image" height="250px" width="220px">
   </div> -->
     <div align="center">
-      <caption><b>Books Details</b></caption>
-      <table border="5px" align="center" cellpadding="10px" id="book">
+      <caption><b>users Details</b></caption>
+      <table border="5px" align="center" cellpadding="10px" id="user">
           <tr id="trhead">
-            <th><b>Book ID</b></th>
-            <th><b>Book Name</b></th>
-            <th><b>Author Name</b></th>
-            <th><b>Quantity</b></th>
+            <th><b>User Id</b></th>
+            <th><b>User Name</b></th>
+            <th><b>User type</b></th>
           </tr>
-        <% @books.each do |book| %>
+        <% @user.each do |user| %>
           <tr>
-            <td> <%= book.id %> </td>
-            <td> <%= book.book_name %> </td>
-            <td> <%= book.author_name %> </td>
-            <td> <%= book.quantity %> </td>
+            <td> <%= user.id %> </td>
+            <td> <%= user.username %> </td>
+            <td> <%= user.user_type %> </td>
           </tr>
         <% end %>
       </table>
     </div>
-
-      <%#= @books.each do |book| %>
+<!-- 
+      <%#= @users.each do |user| %>
         <li>
-          <%#= book.book_name %>
-          <%#= book.author_name %>
-          <%#= book.quantity %>
+          <%#= user.user_name %>
+          <%#= user.author_name %>
+          <%#= user.quantity %>
         </li>
-      <%# end %>
+      <%# end %> -->
  </body>
 </html>
